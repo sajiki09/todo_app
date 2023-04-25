@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>タスク管理アプリ</h1>
+
+<div id="tasks">
+  <% @tasks.each do |task| %>
+    <%= render task %>
+    <p>
+      <%= link_to "タスクの詳細", task %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "新規タスクを作成する", new_task_path %>
