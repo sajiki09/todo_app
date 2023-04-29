@@ -4,10 +4,12 @@
 
 <div id="tasks">
   <% @tasks.each do |task| %>
-    <%= render task %>
-    <p>
-      <%= link_to "タスクの詳細", task %>
-    </p>
+    <div class="task">
+      <%= render task %>
+      <p>
+        <%= link_to "タスクの詳細", task %>
+      </p>
+    </div>
   <% end %>
 </div>
 
