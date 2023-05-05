@@ -11,17 +11,19 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, 'タイトル', style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+  <div class="form-container">
+    <div>
+      <%= form.label :title, 'タイトル', style: "display: block" %>
+      <%= form.text_field :title %>
+    </div>
 
-  <div>
-    <%= form.label :content, '内容', style: "display: block" %>
-    <%= form.text_area :content %>
-  </div>
+    <div>
+      <%= form.label :content, '内容', style: "display: block" %>
+      <%= form.text_area :content %>
+    </div>
 
-  <div>
-    <%= form.submit @task.new_record? ? 'タスクを作成' : 'タスクを更新' %>
+    <div class="submit-btn">
+      <%= form.submit @task.new_record? ? 'タスクを作成' : 'タスクを更新' %>
+    </div>
   </div>
 <% end %>
