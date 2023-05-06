@@ -36,16 +36,6 @@ a {
   flex-direction: column;
   align-items: center;
 
-  .task {
-    background-color: #f8f9fa;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0,1);
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    width: 40%;
-    text-align: center;
-  }
-
   .new-task-link {
     font-weight: bold;
     background-color: #007bff;
@@ -54,6 +44,34 @@ a {
     border-radius: 5px;
     text-decoration-line: none;
     margin: 1rem auto;
+  }
+}
+
+.task-summary {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0,1);
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  width: 40%;
+  text-align: left;
+}
+
+.task-detail-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 6px 4px;
+
+  .task-detail {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0,1);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    width: 40%;
+    text-align: left;
   }
 }
 

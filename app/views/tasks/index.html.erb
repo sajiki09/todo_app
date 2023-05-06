@@ -4,7 +4,7 @@
 
 <div id="tasks">
   <% @tasks.each do |task| %>
-    <div class="task">
+    <div class="task-summary">
       <%= render task %>
       <p>
         <%= link_to "タスクの詳細", task %>
